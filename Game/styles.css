@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    border-style: solid;
+    border-width: 20px 370px 20px 370px;
+    border-color: darkseagreen;
+    min-width: 700px;
+    max-width: 700px;
+    background-color: darkseagreen;
+    position: relative;
+    
+}
+#grid {
+    display: grid;
+    position: relative;
+    
+    grid-template: repeat(21, 30px) / repeat(17, 30px);
+    background-color: darkslategray;
+    border: 10px solid gray;
+    min-width: 70%;
+    width: 72.9%;
+    grid-auto-rows: 0px;
+
+}
+#vert {
+    border: 0;
+    border-left: 10px solid gray;
+    height: 600px;
+    position: absolute;
+    top: 40px;
+    left: 44.3%;
+}
+
+.block,
+.storedblock {
+    border: 2px solid black;
+    
+}
+
+#banner {
+    border-width: 0;
+    border-bottom: 10px solid gray;
+    height: 30px;
+    width: 75.7%;
+    min-width: 75.7%;
+  
+    z-index: 3;
+    background-color: darkseagreen;
+    position: absolute;
+    
+    
+}
+p {
+    position: absolute;
+    z-index: 5;
+}
+#next {
+    grid-area: 2 / 11 / span 2 / span 7;
+}
+#score {
+    grid-area: 9 / 11 / span 2 / span 7;
+}
+#scoreNum {
+    grid-area: 11 / 11 / span 2 / span 7;
+    background-color: darkslategray;
+}
+#lines {
+    grid-area: 14 / 11 / span 2 / span 7;
+}
+#linesNum {
+    grid-area: 16 / 11 / span 2 / span 7;
+    background-color: darkslategray;
+}
+.Label {
+    
+    background-color: darkblue;
+    position: relative;
+}
+.labeltext {
+    color: whitesmoke;
+    font-family: 'Londrina Outline', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+    
+}
+#Lose {
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 5px;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    z-index: 6;
+    display: none;
+    
+}
+#Countdown {
+    position: absolute;
+    left: 21%;
+    top: 40%;
+    z-index: 10;
+    width: 50px;
+    height: 80px;
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#loseText {
+    font-family: 'Rakkas', cursive;
+    font-size: 30px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%)
+}
+
+#restart {
+    font-family: 'Rakkas', cursive;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.829);
+    border: 3px solid rgba(153, 205, 50, 0.829);
+    border-radius: 5px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s;
+
+}
+#restart:hover {
+    background-color: rgba(255, 0, 0, 0.562);
+    border-color: rgba(153, 205, 50, 0.527);
+    cursor: pointer;
+}
